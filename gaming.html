@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+
+<head>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keyword" content="Games, gaming, power">
+  <meta name="description" content="from gamers to gamers">
+  <title>Gamer Station</title>
+  <link rel="shortcut icon" href="Xlogo.png" type="image/x-icon" />
+
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="gaming.css">
+</head>
+
+<body>
+  <div class="nav">
+    <img class="left icon" src="XlogoCut.png" alt="logo">
+    
+    <div id="navmenu" class="el--2">
+      <a href="#home">Home</a>
+      <a href="#Games">Games</a>
+      <a href="#About">About</a>
+      <a href="#Support">Support</a>
+    </div>
+    
+    <a class="right icon" href="javascript:void(0);" class="icon" onclick="navmenu()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  
+  <div class="Centercontainer">
+    <img width="100%" src="main-wallpaper.jpg" alt="">
+    <div class="center">
+      <a class="color-inherit" href="#games">
+        
+        <h4 class="color-inherit">Life is more <strong class="color-inherit">fun</strong> if</h4>
+        <h1 class="color-inherit upperCase">you play Games
+          
+      </a>      
+    </div>
+  </div>
+  
+  <div class="buttons">
+    <h3>Select games platform</h3>
+    <!-- <br> -->
+       <!-- href="javascript:void(0);" onclick="navmenu()" -->
+    <a href="javascript:void(0);" onclick="pc()">
+      PC
+    </a>
+    
+    <a href="javascript:void(0);" onclick="consoole()">
+      Consoles
+    </a>
+    
+    <a href="javascript:void(0);" onclick="smartphone()">
+      Mobile
+    </a>
+  </div>
+  
+  <div id="games">
+    
+    <div id="PC" class="grid pc">
+      pc
+    </div>
+    
+    <div id="Console" class="grid hidden console">
+      console
+    </div>
+    
+    <div id="Mobile" class="grid hidden mobile">
+      mobile
+    </div>
+    
+  </div>
+</body>
+<script src="game.js"></script>
+</html>

@@ -1,0 +1,146 @@
+*{
+  color:#eee;
+  margin:0px;
+  padding: 0px;
+  border: none;
+  box-sizing: border-box;
+}
+body{
+  background: linear-gradient(135deg, #aaaaaa, #555555);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+.color-inherit{
+  color: inherit;
+}
+  
+.upperCase{
+  text-transform: uppercase;
+}
+
+.hidden{
+  display:none;
+}
+
+.pc{
+  background-color: red;
+}
+
+.console{
+  background-color: green;
+}
+
+.mobile{
+  background-color: blue;
+}
+.nav {
+  z-index: 3;
+  position: fixed;
+  background-color:#00000055;
+  width:100%;
+  /* height:40px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.el--2 {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.icon{
+  width: 30px;
+  height: 20px;
+}
+
+.right.icon{
+  visibility: hidden;
+}
+
+.Centercontainer{
+  position: relative;
+}
+div.center{
+  /* background-color: #ff000044; */
+  backdrop-filter: blur(50px);
+  /* backdrop-filter: opacity(70%); */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 361px;
+  padding: 0 7px;
+  border-radius: 15px;
+  /* text-align: center; */
+  /* font-size: 18px; */
+  color: #ffff00;
+}
+
+div.center:hover{
+  backdrop-filter: blur(25px);
+  color: #ffff55;
+}
+
+.buttons{
+  /* min-height: 100px; */
+}
+
+.buttons a{
+  /* height: 50px; */
+  display: inline-block;
+  border: #ffff00 solid 5px;
+  border-radius: 50px;
+  /* background-color: #ffffcc; */
+  color: black;
+  padding: 5px;
+  margin: 5px 0 0 7px;
+}
+
+.grid{
+  min-height: 600px;
+  background-color: #00000055;
+  margin-top: 25px;
+}
+
+
+@media screen and (max-width: 700px){
+  .nav {
+    display: block;
+  }
+
+  .el--2{
+    display: none;
+  }
+
+  .el--2.responsive{
+    padding-top: 10px;
+    display: block;
+    width: 100%;
+  }
+
+  .el--2.responsive a{
+    /* position: relative; */
+    display:block;
+    border-radius: 14px;
+    padding: 10px 10px;
+    /* width: 100%; */
+  }
+  .el--2.responsive a:hover{
+    background-color: #000000bb;
+  }
+  
+  .right.icon{
+    visibility: visible;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
