@@ -19,6 +19,7 @@ function checker() {
 }
 console.log(checker());
 
+
 var counter=0; //this interrupted only by user click or counter
 
 setInterval(function(){
@@ -31,8 +32,13 @@ setInterval(function(){
 
   }, 1000);
 
+// adding user interrupting function:
+function sliderBtn(num) {
+  counter = num;
+}
+
 // var counter=1;
-  // setInterval(function(){
+// setInterval(function(){
 //   document.getElementById('radio' + counter).checked=true;
 //   counter++;
 //   if(counter > 4){
