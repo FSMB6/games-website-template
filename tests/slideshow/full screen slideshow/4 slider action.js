@@ -7,7 +7,7 @@ let btn = document.getElementsByClassName("radio-img1");
 
 let checked=0;
 function checker() {
-  // itorates every radio-img to check which one is checked
+  // iterates every radio-img to check which one is checked
   for (let i = 0; i < btn.length; i++) {
     if (btn[i].checked==true) {
       checked= i;
@@ -19,16 +19,16 @@ function checker() {
 }
 console.log(checker());
 
-var counter=0; //this intrupted only by user click
+var counter=0; //this interrupted only by user click or counter
+
 setInterval(function(){
-    // if (checker()>= btn.length) {
-      
+      if(counter >= btn.length || counter < 0){
+        counter = 0;
+      }
     // }
     btn[ counter ].checked=true;
     counter++;
-    if(counter > 3){
-      counter = 0;
-    }
+
   }, 1000);
 
 // var counter=1;
