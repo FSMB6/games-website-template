@@ -46,6 +46,7 @@
 /* so we divide 100% of full animation on the images number (4) */
 /* we have 25% time steps */
 /* 0%, 25%, 50%, 75% where 0% the begin of the slider and 75% the begin of the fourth img */
+/* 0 -100% -200% -300% for the images.*/
 /* the rest is manipulating time at our well */
 @keyframes slide {
 
