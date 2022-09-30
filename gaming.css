@@ -21,17 +21,9 @@ body{
 }
 a:link {
   text-decoration: none;
+  color: inherit;
 }
 
-.pc{
-  background-color: red;
-}
-.console{
-  background-color: green;
-}
-.mobile{
-  background-color: blue;
-}
 
 .nav {
   z-index: 3;
@@ -60,30 +52,103 @@ a:link {
   visibility: hidden;
 }
 
-/* str this will be replaced */
-.Centercontainer{
+/* Start slider section */
+/* Start Slider base */
+.slider-frame {
+  /* box-sizing: unset; is a must 
+  or the sizes won't be accurate because i set it globally to (border-box) */
+  box-sizing: unset;
   position: relative;
+  width: 100%;
+  /* the problem now is with height
+  since the the position is relative and the element inside is absolute */
+  /* this won't fix the problem */
+  /* height: auto; */
+  /* height: 720px; */
+  
+  /* I fixed it by playing with the aspect ratio */
+  /* padding is length is according to the element width
+  so 100% of padding-top will equal 100% of the width so the aspect will be 1:1 */
+  /* we need 16:9 aspect */
+  padding-top: 56.25%;
+  
+  /* check my first created slideshow to understand how the slider work */
+  overflow: hidden;
 }
-div.center{
-  /* background-color: #ff000044; */
-  backdrop-filter: blur(50px);
-  /* backdrop-filter: opacity(70%); */
+.slider {
+  /* it's container width multiplied by images number */
+  width: calc(100% * 4);
+  height: 100%;
   position: absolute;
+  top: 0;
+  left: 0%;
+  animation-timing-function: ease-in;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  outline-style: dotted;
+  transition: 1s ease; 
+}
+.slider-img {
+  /* it's container width divided by images number */
+  width: calc(100% / 4);
+  height: 100%;
+}
+/* END Slider base */
+
+.center{
+  z-index: 2;
+  backdrop-filter: blur(150px);
+  position: absolute;
+  border-radius:15px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 361px;
-  padding: 0 7px;
-  border-radius: 15px;
-  /* text-align: center; */
-  /* font-size: 18px; */
-  color: #ffff00;
+  padding: 0 15px;
+  cursor: pointer;
 }
-div.center:hover{
-  backdrop-filter: blur(25px);
-  color: #ffff55;
+
+/* start slider buttons section */
+.slider-buttons{
+  z-index: 1;
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  /* the percentage must be the same in both margin and width */
+  --width: 45%;
+  margin-left: calc( calc(100% - max(var(--width) , 400px) )/2) ;
+  width: max(var(--width) , 400px );
+  align-items: center;
 }
-/* end this will be replaced */
+.custom-radio-btn {
+  display: inline-block;
+  width: 15%;
+  height: 10px;
+  position: relative;
+  border-radius: 30px;
+  background-color: #44444499;
+  overflow: hidden;
+  transition: .4s ease;
+}
+.custom-radio-btn:hover {
+  background-color: #4444ff66;
+}
+.custom-radio-btn input {
+  display: none;
+}
+input:checked ~.checkmark{
+  display: inline-block;
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: background-color 1s ease;
+}
+input:checked ~.checkmark:hover{
+  background-color: #bb0000;
+}
+/* end slider buttons section */
+/* END slider section */
 
 /* str this to be styled */
 .buttons{
@@ -105,6 +170,16 @@ div.center:hover{
   min-height: 600px;
   background-color: #00000055;
   margin-top: 25px;
+}
+
+.pc{
+  background-color: red;
+}
+.console{
+  background-color: green;
+}
+.mobile{
+  background-color: blue;
 }
 /* end this to be styled */
 

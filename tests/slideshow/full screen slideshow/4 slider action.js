@@ -24,12 +24,10 @@ function sliderBtn(num) {
     num=0;
   }
   counter = num;
-  console.log(counter);
   btns[ counter ].checked=true;
 
   // this for controlling the slider
   mainSlider.style.left = "-"+String(counter * 100)+"%";
   counter++;
 }
-
 //  end  slider part
