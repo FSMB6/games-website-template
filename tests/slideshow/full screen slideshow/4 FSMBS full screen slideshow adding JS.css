@@ -3,13 +3,20 @@
   margin: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Start slider section */
+/* Start Slider base */
 .slider-frame {
   /* box-sizing: unset; is a must 
   or the sizes won't be accurate because i set it globally to (border-box) */
   box-sizing: unset;
   position: relative;
   width: 100%;
-/* the problem now is with height
+  /* the problem now is with height
   since the the position is relative and the element inside is absolute */
   /* this won't fix the problem */
   /* height: auto; */
@@ -24,13 +31,31 @@
   /* check my first created slideshow to understand how the slider work */
   overflow: hidden;
 }
+.slider {
+  /* it's container width multiplied by images number */
+  width: calc(100% * 4);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  animation-timing-function: ease-in;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  outline-style: dotted;
+  transition: 1s ease; 
+}
+.slider-img {
+  /* it's container width divided by images number */
+  width: calc(100% / 4);
+  height: 100%;
+}
+/* END Slider base */
 
 .center{
-  /* background-color: red; */
   z-index: 2;
-  backdrop-filter: blur(50px);
-  /* backdrop-filter: opacity(70%); */
+  backdrop-filter: blur(150px);
   position: absolute;
+  border-radius:15px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -38,15 +63,8 @@
   cursor: pointer;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-
 /* start slider buttons section */
 .slider-buttons{
-  /* background-color: red; */
   z-index: 1;
   position: absolute;
   bottom: 10px;
@@ -58,27 +76,22 @@ a {
   width: max(var(--width) , 400px );
   align-items: center;
 }
-
 .custom-radio-btn {
   display: inline-block;
   width: 15%;
   height: 10px;
   position: relative;
-  /* border: 5px solid black; */
   border-radius: 30px;
   background-color: #44444499;
   overflow: hidden;
   transition: .4s ease;
 }
-
 .custom-radio-btn:hover {
   background-color: #4444ff66;
-  }
-  
+}
 .custom-radio-btn input {
   display: none;
 }
-
 input:checked ~.checkmark{
   display: inline-block;
   background-color: red;
@@ -87,73 +100,8 @@ input:checked ~.checkmark{
   position: absolute;
   transition: background-color 1s ease;
 }
-
 input:checked ~.checkmark:hover{
   background-color: #bb0000;
 }
 /* end slider buttons section */
-
-.slider {
-  /* it's container width multiplied by images number */
-  width: calc(100% * 4);
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0%;
-  /* animation-name: slide; */
-  animation-timing-function: ease-in;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
-  outline-style: dotted;
-  transition: 1s ease; 
-}
-
-.slider-img {
-  /* it's container width divided by images number */
-  width: calc(100% / 4);
-  height: 100%;
-}
-
-
-/* the basic idea is: */
-/* since we have 4 img we need 4 times it shown. */
-/* so we divide 100% of full animation on the images number (4) */
-/* we have 25% time steps */
-/* 0%, 25%, 50%, 75% where 0% the begin of the slider and 75% the begin of the fourth img */
-/* 0 -100% -200% -300% for the images.*/
-/* the rest is manipulating time at our well */
-
-@keyframes slide {
-
-  20%{
-    left: 0%;
-  }
-  
-  25%{
-    left: -100%;
-  }
-  /* delay */
-  45%{
-    left: -100%;
-  }
-  
-  50%{
-    left: -200%;
-  }
-  /* delay */
-  70%{
-    left: -200%;
-  }
-
-  75%{
-    left: -300%;
-  }
-  /* delay */
-  95%{
-    left: -300%;
-
-  }
-  100%{
-    left: 0;
-  }
-}
+/* END slider section */

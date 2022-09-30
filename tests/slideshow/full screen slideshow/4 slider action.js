@@ -3,8 +3,6 @@ let sliders =  document.getElementsByClassName("slider");
 let mainSlider= sliders[0];
 console.log(mainSlider.nodeType);
 let btns = document.getElementsByClassName("radio-img1");
-// alert(btns.length);
-
 
 var counter=0; //this controlled only by user click or counter
 // this function to do the movement
@@ -17,14 +15,14 @@ setInterval(function(){
 
     // this for controlling the slider
     mainSlider.style.left = "-"+String(counter * 100)+"%";
-
     counter++;
   }, 5000);
 
 // adding user control function:
 function sliderBtn(num) {
-  // if(num >= btns.length || num < 0){
-  // }
+  if(num >= btns.length || num < 0){
+    num=0;
+  }
   counter = num;
   console.log(counter);
   btns[ counter ].checked=true;
