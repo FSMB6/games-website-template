@@ -25,13 +25,24 @@
   overflow: hidden;
 }
 
-/* under testing */
-/* input[type="radio"] {
+.center{
+  /* background-color: red; */
   z-index: 2;
+  backdrop-filter: blur(50px);
+  /* backdrop-filter: opacity(70%); */
   position: absolute;
-  bottom: 0;
-  left: 0;
-} */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 
 /* start slider buttons section */
 .slider-buttons{
@@ -41,20 +52,23 @@
   bottom: 10px;
   display: flex;
   justify-content: space-between;
-  margin-left: calc( calc(100% - max(40% , 400px) )/2) ;
-  width: max(40% , 400px );
+  /* the percentage must be the same in both margin and width */
+  --width: 45%;
+  margin-left: calc( calc(100% - max(var(--width) , 400px) )/2) ;
+  width: max(var(--width) , 400px );
   align-items: center;
 }
 
 .custom-radio-btn {
-min-width: 50px;
-height: 10px;
-position: relative;
-/* border: 5px solid black; */
-border-radius: 30px;
-background-color: #44444499;
-overflow: hidden;
-transition: .4s ease;
+  display: inline-block;
+  width: 15%;
+  height: 10px;
+  position: relative;
+  /* border: 5px solid black; */
+  border-radius: 30px;
+  background-color: #44444499;
+  overflow: hidden;
+  transition: .4s ease;
 }
 
 .custom-radio-btn:hover {
@@ -85,12 +99,13 @@ input:checked ~.checkmark:hover{
   height: 100%;
   position: absolute;
   top: 0;
-  left: -200%;
+  left: 0%;
   /* animation-name: slide; */
   animation-timing-function: ease-in;
   animation-duration: 15s;
   animation-iteration-count: infinite;
   outline-style: dotted;
+  transition: 1s ease; 
 }
 
 .slider-img {

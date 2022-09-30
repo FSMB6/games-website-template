@@ -1,49 +1,37 @@
 //  start slider part
 let sliders =  document.getElementsByClassName("slider");
 let mainSlider= sliders[0];
-
-let btn = document.getElementsByClassName("radio-img1");
-// alert(btn.length);
-
-let checked=0;
-function checker() {
-  // iterates every radio-img to check which one is checked
-  for (let i = 0; i < btn.length; i++) {
-    if (btn[i].checked==true) {
-      checked= i;
-      // alert(checked);
-      return checked;
-    }
-    // alert(checked);
-  }
-}
-console.log(checker());
+console.log(mainSlider.nodeType);
+let btns = document.getElementsByClassName("radio-img1");
+// alert(btns.length);
 
 
-var counter=0; //this interrupted only by user click or counter
-
+var counter=0; //this controlled only by user click or counter
+// this function to do the movement
 setInterval(function(){
-      if(counter >= btn.length || counter < 0){
+      if(counter >= btns.length || counter < 0){
         counter = 0;
       }
-    // }
-    btn[ counter ].checked=true;
+    
+    btns[ counter ].checked=true;
+
+    // this for controlling the slider
+    mainSlider.style.left = "-"+String(counter * 100)+"%";
+
     counter++;
+  }, 5000);
 
-  }, 1000);
-
-// adding user interrupting function:
+// adding user control function:
 function sliderBtn(num) {
+  // if(num >= btns.length || num < 0){
+  // }
   counter = num;
-}
+  console.log(counter);
+  btns[ counter ].checked=true;
 
-// var counter=1;
-// setInterval(function(){
-//   document.getElementById('radio' + counter).checked=true;
-//   counter++;
-//   if(counter > 4){
-//     counter = 1;
-//   }
-// }, 5000);
+  // this for controlling the slider
+  mainSlider.style.left = "-"+String(counter * 100)+"%";
+  counter++;
+}
 
 //  end  slider part
