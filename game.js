@@ -8,6 +8,7 @@ function navmenu() {
   }
 } 
 
+// str platform
 var PC = "grid pc";
 var PCH = "grid hidden pc";
 
@@ -21,32 +22,22 @@ var mobileH = "grid hidden mobile";
 var PCE = document.getElementById("PC");
 var ConsoleE = document.getElementById("Console");
 var MobileE = document.getElementById("Mobile");
-function pc() {
-  // alert("pc");
-  // console.log("running");
-  // console.log(PCE.className);
-  PCE.className = PC;
 
+function pc() {
+  PCE.className = PC;
   ConsoleE.className = consoleH;
   MobileE.className = mobileH;
 } 
 
 function consoole() {
-  // alert("consoole");
   PCE.className = PCH;
-  // alert(PCE.className);
-  
   ConsoleE.className = console;
-  // alert(ConsoleE.className);
-  
   MobileE.className = mobileH;
-  // alert(MobileE.className);
 } 
 
 function smartphone() {
-  // alert("mobile");
-
   PCE.className = PCH;
   ConsoleE.className = consoleH;
   MobileE.className = mobile;
 } 
+// end platform

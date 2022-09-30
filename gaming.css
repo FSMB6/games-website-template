@@ -7,33 +7,32 @@
 }
 body{
   background: linear-gradient(135deg, #aaaaaa, #555555);
-    background-size: cover;
+  background-size: cover;
     background-repeat: no-repeat;
 }
-  
 .color-inherit{
   color: inherit;
 }
-  
 .upperCase{
   text-transform: uppercase;
 }
-
 .hidden{
   display:none;
+}
+a:link {
+  text-decoration: none;
 }
 
 .pc{
   background-color: red;
 }
-
 .console{
   background-color: green;
 }
-
 .mobile{
   background-color: blue;
 }
+
 .nav {
   z-index: 3;
   position: fixed;
@@ -48,26 +47,20 @@ body{
   align-items: center;
   padding: 10px 15px;
 }
-
 .el--2 {
   display: flex;
   justify-content: space-between;
   width: 400px;
 }
-
-a:link {
-  text-decoration: none;
-}
-
 .icon{
   width: 30px;
   height: 20px;
 }
-
 .right.icon{
   visibility: hidden;
 }
 
+/* str this will be replaced */
 .Centercontainer{
   position: relative;
 }
@@ -86,12 +79,13 @@ div.center{
   /* font-size: 18px; */
   color: #ffff00;
 }
-
 div.center:hover{
   backdrop-filter: blur(25px);
   color: #ffff55;
 }
+/* end this will be replaced */
 
+/* str this to be styled */
 .buttons{
   /* min-height: 100px; */
 }
@@ -112,8 +106,9 @@ div.center:hover{
   background-color: #00000055;
   margin-top: 25px;
 }
+/* end this to be styled */
 
-
+/* str effective responsive nav */
 @media screen and (max-width: 700px){
   .nav {
     display: block;
@@ -147,3 +142,4 @@ div.center:hover{
     right: 10px;
   }
 }
+/* end effective responsive nav */
