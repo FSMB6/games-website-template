@@ -37,7 +37,7 @@ a:link {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 15px;
+  padding: 23px 15px;
 }
 .el--2 {
   font-family: 'Noto Sans', sans-serif;
@@ -206,7 +206,7 @@ input:checked ~.checkmark:hover{
     /* position: relative; */
     display:block;
     border-radius: 14px;
-    padding: 10px 10px;
+    padding: 10px;
     /* width: 100%; */
   }
   .el--2.responsive a:hover{
@@ -216,8 +216,9 @@ input:checked ~.checkmark:hover{
   .right.icon{
     visibility: visible;
     position: absolute;
-    top: 10px;
+    top: 35.05px;
     right: 10px;
+    transform: translateY(-50%);
   }
 }
 /* end effective responsive nav */
