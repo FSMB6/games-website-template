@@ -114,7 +114,7 @@ a:link {
 .slider-buttons{
   z-index: 1;
   position: absolute;
-  bottom: 10px;
+  bottom: 15px;
   display: flex;
   justify-content: space-between;
   /* the percentage must be the same in both margin and width */
@@ -134,21 +134,21 @@ a:link {
   transition: .4s ease;
 }
 .custom-radio-btn:hover {
-  background-color: #4444ff66;
+  background: #25289aff;
 }
 .custom-radio-btn input {
   display: none;
 }
 input:checked ~.checkmark{
   display: inline-block;
-  background-color: red;
+  background: #25289aff;
   width: 100%;
   height: 100%;
   position: absolute;
   transition: background-color 1s ease;
 }
 input:checked ~.checkmark:hover{
-  background-color: #bb0000;
+  /* background-color: #bb0000; */
 }
 /* end slider buttons section */
 /* END slider section */
