@@ -6,9 +6,9 @@
   box-sizing: border-box;
 }
 body{
-  background: linear-gradient(135deg, #aaaaaa, #555555);
+  background: linear-gradient(310deg, #6f1692ff, #25289aff, #108e72ff);
   background-size: cover;
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 .color-inherit{
   color: inherit;
