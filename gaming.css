@@ -32,7 +32,7 @@ a:link {
   top: 10px;
   left:15px;
   border-radius: 15px;
-  background-color:#dd0000aa;
+  background-color:rgba(18, 20, 46, 0.841);
   /* height:40px; */
   display: flex;
   justify-content: space-between;
@@ -40,9 +40,12 @@ a:link {
   padding: 10px 15px;
 }
 .el--2 {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
   display: flex;
   justify-content: space-between;
-  width: 400px;
+  width: 500px;
 }
 .icon{
   width: 30px;
