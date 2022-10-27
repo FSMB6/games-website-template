@@ -154,19 +154,29 @@ input:checked ~.checkmark:hover{
 /* END slider section */
 
 /* str this to be styled */
-.buttons{
-  /* min-height: 100px; */
+.Platform-buttons{
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 5px;
+  align-items: center;
+  margin-left: 15px;
 }
 
-.buttons a{
+.Platform-buttons a{
   /* height: 50px; */
   display: inline-block;
-  border: #ffff00 solid 5px;
+  border: #12142eff solid 5px;
   border-radius: 50px;
   /* background-color: #ffffcc; */
-  color: black;
-  padding: 5px;
-  margin: 5px 0 0 7px;
+  background-color: #12142eff;
+  padding: 8px 25px ;
+  /* margin: 5px 0 0 7px; */
+  margin: 0 15px;
+}
+
+.Platform-buttons a:hover{
+  background-color: #282c67;
+  border-color: #282c67;
 }
 
 .grid{
