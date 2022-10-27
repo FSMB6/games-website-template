@@ -44,14 +44,14 @@ function sliderBtn(num) {
 
 
 // str platform
-var PC = "grid pc";
-var PCH = "grid hidden pc";
+var PC = "container pc";
+var PCH = "container hidden pc";
 
-var console = "grid console";
-var consoleH = "grid hidden console";
+var console = "container console";
+var consoleH = "container hidden console";
 
-var mobile = "grid mobile";
-var mobileH = "grid hidden mobile";
+var mobile = "container mobile";
+var mobileH = "container hidden mobile";
 
 
 var PCE = document.getElementById("PC");

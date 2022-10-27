@@ -178,15 +178,81 @@ input:checked ~.checkmark:hover{
   background-color: #282c67;
   border-color: #282c67;
 }
-
-.grid{
+.container{
   min-height: 600px;
-  background-color: #00000055;
-  margin-top: 25px;
+}
+
+.grid-games{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 48px;
+  row-gap: 48px;
+}
+
+.element{
+  background-color: rgba(56, 13, 73, 0.267);
+  min-width: 200px;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.22);
+  border-radius: 12px;
+}
+
+.game-info {
+  margin: 0 24px;
+}
+
+.category {
+  font-size: 12px;
+  color: #ffffccb7;
+  text-transform: uppercase;
+}
+
+.list-info {
+  list-style: none;
+  margin-top: 16px;
+}
+
+.list-info li{
+  margin-top: 8px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: left;
+}
+
+.list-info li span{
+  margin-top: 8px;
+  color:rgb(226, 226, 226);
+}
+
+.price-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 16px;
+  margin-top: 16px;
+  margin-left: 24px;
+}
+
+.price {
+  font-size: 24px;
+}
+
+.Add-to-cart {
+  display: inline-block;
+  border: #202350 solid 5px;
+  border-radius: 52px;
+  padding: 8px 16px ;
+  margin: 0 16px;
+  background-color: #202350;
+}
+
+.Add-to-cart:hover {
+  cursor: pointer;
+  background-color: #12142eff;
+  border-color: #12142eff;
 }
 
 .pc{
-  background-color: red;
+  /* background-color: red; */
 }
 .console{
   background-color: green;

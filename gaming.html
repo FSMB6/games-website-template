@@ -92,19 +92,49 @@
   <!-- end Featured Games buttons -->
 
   <!-- str games sections -->
-  <div id="games">
-    <div id="PC" class="grid pc">
-      pc
+  <section id="games">
+
+    <!-- this related to js and hiding with buttons-->
+    <div id="PC" class="container pc">
+      <!-- all inside will be shown or hidden -->
+      <div class="grid-games">
+        
+        <figure class="element">
+          <img class="game-img" width="100%" src="games/cod-bo2.jpg">
+          <div class="game-info">
+            <h3>Call Of Duty - BO2</h3>
+            <span class="category">Shooter Game</span>
+            <ul class="list-info">
+              <li>
+                <svg class="game-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M221.7,34.3A8.1,8.1,0,0,0,216,32h0l-63.8.2a8.1,8.1,0,0,0-6.2,2.9L75.6,120.3,67.3,112a16.1,16.1,0,0,0-22.6,0L32,124.7a15.9,15.9,0,0,0,0,22.6l20.9,20.9-30,29.9a16.2,16.2,0,0,0,0,22.7l12.3,12.3a16.3,16.3,0,0,0,22.7,0l29.9-30L108.7,224a16.1,16.1,0,0,0,22.6,0L144,211.3a15.9,15.9,0,0,0,0-22.6l-8.3-8.3L220.9,110a8.1,8.1,0,0,0,2.9-6.2L224,40A8.1,8.1,0,0,0,221.7,34.3ZM207.8,100l-83.5,69-13-13,54.4-54.3a8.1,8.1,0,0,0-11.4-11.4L100,144.7l-13-13,69-83.5,52-.2Z"></path></svg>
+                <span>New Weapons</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M228.9,49.7a8,8,0,0,0-6.8-1.5L160.9,63.5,99.6,32.8h-.1l-.8-.3h-.2l-.7-.2h-.3l-.7-.2H94.1l-64,16A8,8,0,0,0,24,56V200a7.8,7.8,0,0,0,3.1,6.3A7.9,7.9,0,0,0,32,208l1.9-.2,61.2-15.3,61.3,30.7h.1l.7.3h.1l.8.3h3.8l64-16A8,8,0,0,0,232,200V56A7.8,7.8,0,0,0,228.9,49.7ZM152,203.1l-48-24V52.9l48,24Z"></path></svg>
+                <span>New Maps</span></li>
+            </ul>
+          </div>
+          <div class="price-box">
+            <Strong class="price">$50</Strong>
+            <button class="Add-to-cart">Add to Cart</button>
+          </div>
+        </figure>
+
+      </div>
     </div>
     
-    <div id="Console" class="grid hidden console">
+    <!-- this related to js and hiding with buttons-->
+    <div id="Console" class="container hidden console">
+      <!-- all inside will be shown or hidden -->
       console
     </div>
-    
-    <div id="Mobile" class="grid hidden mobile">
+
+    <!-- this related to js and hiding with buttons-->
+    <div id="Mobile" class="container hidden mobile">
+      <!-- all inside will be shown or hidden -->  
       mobile
     </div>
-  </div>
+  </section>
   <!-- str games sections -->
 </body>
 <script src="game.js"></script>
