@@ -153,6 +153,11 @@ input:checked ~.checkmark:hover{
 /* end slider buttons section */
 /* END slider section */
 
+
+.width-control {
+  width: 90%;
+  margin: auto;
+}
 /* str platform select */
 .Platform-select{
   min-height: 100px;
@@ -199,7 +204,7 @@ input:checked ~.checkmark:hover{
 
 .grid-games{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 48px;
   row-gap: 48px;
 }
