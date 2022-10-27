@@ -131,7 +131,7 @@ a:link {
   border-radius: 30px;
   background-color: #44444499;
   overflow: hidden;
-  transition: .4s ease;
+  transition: 1s ease;
 }
 .custom-radio-btn:hover {
   background: #25289aff;
