@@ -24,6 +24,10 @@ a:link {
   color: inherit;
 }
 
+ul {
+  list-style-type: none;
+}
+
 
 .nav {
   z-index: 3;
@@ -398,6 +402,77 @@ input:checked ~.checkmark:hover{
 .testimonial-author {
   color: #c3fae8;
   align-self: center;
+}
+
+.price {
+  font-size: 24px;
+}
+
+/* Footer */
+.footer {
+  background-color: rgba(0, 0, 0, 0.218);
+  backdrop-filter: blur(100px);
+  margin-top: 86px;
+  padding-bottom: 16px;
+  text-align: center;
+}
+
+.footer a{
+  font-size: 16px;
+}
+
+.container-footer {
+  display:flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.nav-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  min-height: 48px;
+  min-width: 500px;
+  margin: 0 auto;
+}
+
+.nav-footer a:link, .Rights ul a:link, .Rights p, .Our-model p, .footer a{
+  color: rgb(150, 150, 150);
+}
+
+.nav-footer a:hover, .Rights ul a:hover, .social-icons:hover{
+  cursor: pointer;
+  color: #fff;
+}
+
+.container-footer ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  min-height: 64px;
+  min-width: 500px;
+  margin: 0 auto;
+}
+
+.Rights>p{
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.Rights ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  min-height: 64px;
+  min-width: 500px;
+  margin: 0 auto;
+}
+
+.Our-model p{
+  margin: 24px 0;
 }
 
 
