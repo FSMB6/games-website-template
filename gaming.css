@@ -9,6 +9,7 @@ body{
   background: linear-gradient(310deg, #6f1692ff, #25289aff, #108e72ff);
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: 'Noto Sans', sans-serif;
 }
 .color-inherit{
   color: inherit;
@@ -107,11 +108,21 @@ ul {
   backdrop-filter: blur(150px);
   position: absolute;
   border-radius:15px;
+  /* inline-size:30px; */
+  /* line-break: loose; */
+  text-align: center;
+  display: inline-block;
+  /* min-width: 532.783px; */
+  font-size: 5vw;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 0 15px;
   cursor: pointer;
+}
+
+.center>a{
+  /* display: inline-block; */
 }
 
 /* start slider buttons section */
