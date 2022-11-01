@@ -93,7 +93,7 @@ ul {
   animation-timing-function: ease-in;
   animation-duration: 15s;
   animation-iteration-count: infinite;
-  outline-style: dotted;
+  /* outline-style: dotted; */
   transition: 1s ease; 
 }
 .slider-img {
