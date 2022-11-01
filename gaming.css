@@ -184,7 +184,6 @@ input:checked ~.checkmark:hover{
 }
 
 .Platform-buttons{
-  /* border: 3px solid green; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -197,11 +196,10 @@ input:checked ~.checkmark:hover{
 .Platform-buttons a{
   /* height: 50px; */
   display: inline-block;
-  border: #12142eff solid 5px;
   border-radius: 50px;
   /* background-color: #ffffcc; */
   background-color: #12142eff;
-  padding: 8px 25px ;
+  padding: 13px 29px ;
   /* margin: 5px 0 0 7px; */
   /* margin: 0 15px; */
   /* margin-bottom: 15px; */
@@ -209,7 +207,6 @@ input:checked ~.checkmark:hover{
 
 .Platform-buttons a:hover{
   background-color: #282c67;
-  border-color: #282c67;
 }
 /* end platform select */
 
@@ -535,3 +532,29 @@ input:checked ~.checkmark:hover{
   }
 }
 /* end effective responsive nav */
+
+/* str responsive plat-buttons */
+@media screen and (max-width: 840px){
+.Platform-buttons{
+  /* align-items:flex-end; */
+  width: 141.367px;
+  flex-direction: column;
+  row-gap: 10px;
+}
+/* end responsive plat-buttons */
+
+/* str responsive grid games */
+@media screen and (max-width: 1600px){
+.grid-games{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+}
+
+@media screen and (max-width: 1056px){
+  .grid-games{
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  }
+/* end responsive grid games */
