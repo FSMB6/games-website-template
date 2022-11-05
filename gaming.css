@@ -230,6 +230,20 @@ input:checked ~.checkmark:hover{
   /* overflow: hidden; */
 }
 
+.aspect-rect{
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  position: relative; /* If you want text inside of it */
+  overflow-y: clip;
+}
+
+.game-img {
+  display: inline;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .game-info {
   margin: 0 24px;
 }
