@@ -473,9 +473,10 @@ input:checked ~.checkmark:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: min(20px , 3vw);
   min-height: 48px;
-  width: 560px;
+  /* width: 560px; */
+  width: min(560px , 90%);
   margin: 0 auto;
 }
 
@@ -494,7 +495,7 @@ input:checked ~.checkmark:hover{
   align-items: center;
   gap: 50px;
   min-height: 64px;
-  min-width: 500px;
+  /* min-width: 500px; */
   margin: 0 auto;
 }
 
@@ -507,9 +508,9 @@ input:checked ~.checkmark:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: min(2vw , 30px);
-  min-height: 64px;
-  min-width: 500px;
+  gap: min(20px , 3vw);
+  min-height: 48px;
+  width: min(560px , 90%);
   margin: 0 auto;
 }
 
