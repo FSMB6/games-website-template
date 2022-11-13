@@ -338,7 +338,8 @@ input:checked ~.checkmark:hover{
 
 .testimonial-text-app {
   font-size: 20px;
-  font-size: 1.8vw;
+  font-size: max(15px , 1.8vw);
+  /* font-size: max(30px , 3.8vw); */
   margin-top: 16px;
   font-style:none;
 }
@@ -347,18 +348,22 @@ input:checked ~.checkmark:hover{
   display: flex;
   gap: 32px;
   align-items: center;
+  --b-height: max(61.4167px , 6.9vw);
+  --b-width: max(140.633px , 15.8vw);
+  --b-font-size: max(18.6833px , 2.1vw);
 }
 
 .download-app {
   /* width: 180px; */
-  width: 15.8vw;
+  width: var(--b-width);
+  /* set max values to when window width 890px */
   /* height: 80px; */
-  height: 6.9vw;
+  height: var(--b-height);
   background-color: #25289aff;
   border-radius: 50px;
   /* font-size: 24px; */
   /* =~ 2vw */
-  font-size: 2.1vw;
+  font-size: var(--b-font-size);
 }
 
 
@@ -369,12 +374,13 @@ input:checked ~.checkmark:hover{
 
 .platform-app {
   /* width: 180px; */
-  width: 15.8vw;
+  width: var(--b-width);
+  /* set max values to when window width 890px */
   /* height: 80px; */
-  height: 6.9vw;
+  height: var(--b-height);
   background-color: #6f1692ff;
   border-radius: 50px;
-  font-size: 2.1vw;
+  font-size: var(--b-font-size);
 }
 
 .platform-app:hover {
@@ -590,7 +596,8 @@ input:checked ~.checkmark:hover{
     grid-template-columns: 1fr;
   }
   .testimonial-image-app {
-    /* width: ; */
+    width: 100%;
+    height: auto;
   }
 }
 /* end effective responsive nav */
