@@ -586,5 +586,11 @@ input:checked ~.checkmark:hover{
   .grid-games{
     grid-template-columns: 1fr;
   }
+  .testimonial-section-app {
+    grid-template-columns: 1fr;
+  }
+  .testimonial-image-app {
+    /* width: ; */
+  }
 }
 /* end effective responsive nav */
