@@ -407,8 +407,8 @@ input:checked ~.checkmark:hover{
   gap: 52px;
   /* column-gap: 32px;
   row-gap: 32px; */
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   background-color: #087f5b;
   color: #fff;
   /* padding: 24px; */
@@ -422,23 +422,24 @@ input:checked ~.checkmark:hover{
 .testimonial-image {
   /* width: 256px;
   height: 256px; */
-  align-self:center;
+  /* align-self:center; */
+  justify-self: center;
   border-radius: 10px;
 }
 
 .testimonial-box {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  align-self: center;
+  /* align-items: center; */
 }
 
 .testimonial-text {
   font-style: italic;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
   font-size: 18px;
   line-height: 1.7;
   color: #e6fcf5;
-  align-self: flex-start;
+  /* align-self: flex-start; */
 }
 
 .testimonial-author {
@@ -552,6 +553,10 @@ input:checked ~.checkmark:hover{
   width: 141.367px;
   flex-direction: column;
   row-gap: 10px;
+}
+
+.testimonial-section {
+  grid-template-columns: auto;
 }
 }
 /* end responsive plat-buttons */
